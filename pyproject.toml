@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "kpd-assistant"
+version = "0.1.0"
+description = "KPD project AI assistant"
+authors = ["Grigorii Polozok <grigory1505@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.12"
+aiohttp = "*"
+hvac = "*"
+motor = "*"
+regex = "*"
+python-telegram-bot = "*"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "*"
+flake8 = "*"
+flake8-black = "*"
+black = "*"
+yapf = "*"
+rope = "*"
+celery = "*"
+pymorphy2 = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
