@@ -15,8 +15,9 @@ from telegram.ext import (Application,
 
 from kpd_assistant.lib.config import Config
 
-from kpd_assistant.bot.info import INFORMATION, PROMPT
-from kpd_assistant.bot.faq import FAQ
+from kpd_assistant.bot.info import INFORMATION
+from kpd_assistant.faq import FAQ
+from kpd_assistant.prompt import PROMPT
 
 
 log = logging.getLogger("system")
@@ -72,7 +73,7 @@ class Bot:
         update: Update,
         context: ContextTypes.DEFAULT_TYPE
     ) -> None:
-        update.effective_message.reply_text(INFORMATION)
+        await update.effective_message.reply_text(INFORMATION)
 
     async def _handle_message(
         self,

@@ -12,6 +12,10 @@ hvac = "*"
 motor = "*"
 regex = "*"
 python-telegram-bot = "*"
+fastapi = "^0.109.0"
+uvicorn = "^0.27.0"
+pydantic = "^2.6.0"
+pydantic-extra-types = "^2.6.0"
 
 [tool.poetry.group.dev.dependencies]
 pylint = "*"
@@ -21,7 +25,7 @@ black = "*"
 yapf = "*"
 rope = "*"
 celery = "*"
-pymorphy2 = "*"
+httpx = "*"
 
 [build-system]
 requires = ["poetry-core"]
